@@ -36,9 +36,10 @@ export default Vue.extend({
 <style lang="scss" scoped>
 @import '@/assets/styles/_variables.scss';
     nav {
-        background-image: url("../assets/navBackground.png");
+        background-image: url("../assets/navBackgroundBottles.png");
         background-repeat: no-repeat;
         background-position: center center;
+        backdrop-filter: blur(100px);
         background-size: 100%;
         color: $navTextColor;
         font-size: 2vh;
@@ -196,7 +197,7 @@ export default Vue.extend({
             right: 0;
         }
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 580px) {
         nav {
             background-size: auto 100%;
         }
